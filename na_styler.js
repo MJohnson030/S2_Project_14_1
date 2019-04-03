@@ -20,8 +20,16 @@
       Returns a random integer from 0 up to size-1.
 
 */
+window.onload = setStyles;
 
+function setStyles() {
+      var styleNum = randInt(5);
+      var linkElem = document.createElement("link");
+      linkElem.setAttribute("rel", "stylesheet");
+      linkElem.setAttribute("id", "fancysheet");
+      linkElem.setAttribute("href", "na_style_" + styleNum + ".css");
+}
 
 function randInt(size) {
-   return Math.floor(size*Math.random());
+      return Math.floor(size * Math.random());
 }
