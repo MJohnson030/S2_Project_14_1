@@ -5,8 +5,8 @@
    Tutorial 12
    Case Problem 1
 
-   Author: 
-   Date:   
+   Author: Millione Johnson
+   Date: 4/3/19  
 
    Filename: na_styler.js
 
@@ -28,7 +28,14 @@ function setStyles() {
       linkElem.setAttribute("rel", "stylesheet");
       linkElem.setAttribute("id", "fancysheet");
       linkElem.setAttribute("href", "na_style_" + styleNum + ".css");
+
+      document.head.appendChild(linkElem);
+      var figBox = document.createElement("figure");
 }
+
+
+
+
 
 function randInt(size) {
       return Math.floor(size * Math.random());
